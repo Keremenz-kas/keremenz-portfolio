@@ -4147,7 +4147,7 @@
           anyMatch && matches2.push(c);
         }
       });
-      _dispatch("matchMediaRevert");
+      _dispatch("matchMediarevert");
       matches2.forEach(function (c) {
         return c.onMatch(c);
       });
@@ -4491,7 +4491,7 @@
     matchMedia: function matchMedia(scope) {
       return new MatchMedia(scope);
     },
-    matchMediaRefresh: function matchMediaRefresh() {
+    matchMediarefresh: function matchMediarefresh() {
       return (
         _media.forEach(function (c) {
           var cond = c.conditions,
@@ -10417,7 +10417,7 @@
             gsap3.addEventListener("matchMediaInit", function () {
               return _revertAll();
             });
-            gsap3.addEventListener("matchMediaRevert", function () {
+            gsap3.addEventListener("matchMediarevert", function () {
               return _revertRecorded();
             });
             gsap3.addEventListener("matchMedia", function () {
